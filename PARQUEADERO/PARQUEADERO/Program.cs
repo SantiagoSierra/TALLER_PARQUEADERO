@@ -12,7 +12,7 @@ namespace PARQUEADERO
         {
 
             Console.WriteLine("Prueba");
-
+            Console.WriteLine("Prueba2");
         }
     }
 }
