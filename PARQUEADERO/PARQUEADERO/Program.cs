@@ -15,7 +15,6 @@ namespace PARQUEADERO
             Console.WriteLine("Prueba2");
 
 
-            //S
             Console.WriteLine("Santiago Sierra");
         }
     }
