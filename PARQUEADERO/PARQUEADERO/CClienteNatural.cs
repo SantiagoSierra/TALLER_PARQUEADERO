@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace PARQUEADERO
 {
-    class CClienteNatural
+    class CClienteNatural : CACliente
     {
+
+        public CClienteNatural(string pTipoCliente, string pCC, string pNombre, int pCelular) 
+                              : base(pCC, pNombre, pCelular)
+        {
+            base.TipoCliente1 = pTipoCliente;
+        }
+
     }
 }
