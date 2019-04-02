@@ -16,7 +16,8 @@ namespace PARQUEADERO
 
             Console.WriteLine("Camila Agudelo");
 
-
+            Console.WriteLine("Hola miranda");
+            Console.WriteLine("Hola camila");
 
             Console.WriteLine("Santiago Sierra");
         }
