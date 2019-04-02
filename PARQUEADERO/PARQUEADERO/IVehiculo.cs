@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace PARQUEADERO
 {
-    class IVehiculo
+    interface IVehiculo
     {
-
-
+        void Encender();
+        void Apagar();
+        void Estacionar();
     }
 }

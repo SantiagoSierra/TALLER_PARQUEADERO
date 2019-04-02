@@ -7,10 +7,12 @@ using System.Threading.Tasks;
 namespace PARQUEADERO
 {
 
-    class CMoto
+    class CMoto : CPropiedadesVehiculo
     {
-        
-        //Me gusta el arequipe con sacol
+        private string CNatural;
+        private string CJuridica;
     }
+   
+
 
 }

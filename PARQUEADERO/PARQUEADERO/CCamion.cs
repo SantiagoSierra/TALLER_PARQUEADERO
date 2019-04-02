@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace PARQUEADERO
 {
-    class CCamion
+    class CCamion : CPropiedadesVehiculo
     {
-
+        private string CNatural;
+        private string CJuridica;
 
     }
 }
