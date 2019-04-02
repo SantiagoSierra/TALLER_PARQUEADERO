@@ -4,18 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
 namespace PARQUEADERO
 {
-    class Program
+    class CACliente
     {
-        static void Main(string[] args)
-        {
-
-           
 
 
 
-        }
     }
 }

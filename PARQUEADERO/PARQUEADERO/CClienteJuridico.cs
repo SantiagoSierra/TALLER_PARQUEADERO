@@ -4,18 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
 namespace PARQUEADERO
 {
-    class Program
+    class CClienteJuridico
     {
-        static void Main(string[] args)
-        {
-
-           
-
-
-
-        }
     }
 }
