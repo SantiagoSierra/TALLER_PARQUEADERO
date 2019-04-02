@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace PARQUEADERO
 {
+
     class CMoto
     {
-
-
+        
+        //Me gusta el arequipe con sacol
     }
 }
