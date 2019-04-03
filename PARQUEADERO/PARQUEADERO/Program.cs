@@ -15,6 +15,13 @@ namespace PARQUEADERO
             CSistema sistemaE = new CSistema();
             int opcion = -1;
 
+            Console.WriteLine("Ingrese el numero de celdas del parqueadero");
+            int nCeldas = Convert.ToInt16(Console.ReadLine());
+
+            sistemaE.GenerarCeldas(nCeldas);
+
+            
+
             while (opcion!=0)
             {
 
@@ -26,7 +33,7 @@ namespace PARQUEADERO
                 Console.WriteLine("2.Registrar cliente.");
                 Console.WriteLine("3.Registrar vehiculo.");
                 Console.WriteLine("4.Parquear vehiculo");
-                Console.WriteLine("5.Liberar Celda");
+                Console.WriteLine("5.Liberar Celda y cobrar Servicio");
                 Console.WriteLine("6.Consultar clientes.");
                 Console.WriteLine("7.Consultar informacion de vehiculos y dueños");
                 Console.WriteLine("0.Salir");
@@ -36,7 +43,7 @@ namespace PARQUEADERO
             switch (opcion)
             {
                 case 1:
-
+                    sistemaE.ConsultarCeldas();
                     break;
 
                 case 2:
@@ -109,46 +116,35 @@ namespace PARQUEADERO
                         break;
 
                 case 4:
-
+                        sistemaE.ParquearVehiculo();
                     break;
 
                 case 5:
-
+                        sistemaE.LiberarCelda();
                     break;
 
                 case 6:
                     Console.WriteLine("CONSULTAR CLIENTE:");
-                    Console.WriteLine("1.Consultar cliente natural.");
-                    Console.WriteLine("2.Consultar cliente juridico.");
-                    Console.WriteLine("0.Regresar");
-                    Console.Write("opcion=");
-                    int opCC = Convert.ToInt16(Console.ReadLine());
                     Console.Write("Por favor ingrese la cedula=");
                     String cc = Console.ReadLine();
 
-                    switch (opCC)
-                    {
-                        case 1:
-                            sistemaE.ConsultarClienteN(cc);
-                            break;
 
-                        case 2:
-                            sistemaE.ConsultarClienteJ(cc);
-                            break;
+                        Console.WriteLine("Clientes encontrados:");
+                        sistemaE.ConsultarClienteJ(cc);
+                        sistemaE.ConsultarClienteN(cc);
 
-                        case 0:
-                            Console.WriteLine("Regresando...");
-                            break;
-
-                        
-                        default:
-                            break;
-                    }
-
-
-                    break;
                      
 
+                    break;
+
+
+                 case 7:
+                  
+
+                    sistemaE.ConsultarVehiculo();
+
+
+                        break;
 
                 default:
                     break;

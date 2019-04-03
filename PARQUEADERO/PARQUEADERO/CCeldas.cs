@@ -29,26 +29,9 @@ namespace PARQUEADERO
         public double HoraInicio1 { get => HoraInicio; set => HoraInicio = value; }
         public double HoraFin1 { get => HoraFin; set => HoraFin = value; }
         public string Tipo1 { get => Tipo; set => Tipo = value; }
+        public string PlacaVehiculo1 { get => PlacaVehiculo; set => PlacaVehiculo = value; }
 
-        public void CambiarEstado() {
-
-        }
-
-        public void RecorrerCeldas() {
-
-        }
-
-        public void CrearCeldas() {
-
-            for (int i = 0; i < Celdas.GetLength(0); i++)
-            {
-
-                
-
-
-            }
-
-        }
+       
 
     }
 }
