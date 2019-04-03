@@ -8,8 +8,16 @@ namespace PARQUEADERO
 {
     class CCamion : CPropiedadesVehiculo
     {
-        private string CNatural;
-        private string CJuridica;
+      
+        private String CedulaPropietario;
 
+        
+        public string CedulaPropietario1 { get => CedulaPropietario; set => CedulaPropietario = value; }
+
+        public CCamion(String pPlaca, float pDimensiones, String pTipoVehiculo, String pMarca, String pColor, String pCedula)
+                        : base(pPlaca, pDimensiones, pTipoVehiculo, pMarca, pColor)
+        {
+            this.CedulaPropietario = pCedula;
+        }
     }
 }

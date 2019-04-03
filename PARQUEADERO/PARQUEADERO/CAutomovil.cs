@@ -8,7 +8,16 @@ namespace PARQUEADERO
 {
     class CAutomovil: CPropiedadesVehiculo
     {
-        private string CNatural;
-        private string CJuridica;
+
+        private String CedulaPropietario;
+
+        public string CedulaPropietario1 { get => CedulaPropietario; set => CedulaPropietario = value; }
+
+
+        public CAutomovil(String pPlaca, float pDimensiones, String pTipoVehiculo, String pMarca, String pColor, String pCedula)
+                         : base(pPlaca, pDimensiones, pTipoVehiculo, pMarca, pColor) {
+            this.CedulaPropietario = pCedula;
+        }
+
     }
 }

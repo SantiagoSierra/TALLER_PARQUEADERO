@@ -8,19 +8,23 @@ namespace PARQUEADERO
 {
     class CPropiedadesVehiculo : IVehiculo
     {
-            String Placa, Color, Marca;
-            float Dimensiones;
-            bool Apagado, Movimiento;
+           private String Placa, Color, Marca;
+           private float Dimensiones;
+           private bool Apagado, Movimiento;
+           private String TipoVehiculo; 
+            
 
             public string Placa1 { get => Placa; set => Placa = value; }
             public string Color1 { get => Color; set => Color = value; }
             public string Marca1 { get => Marca; set => Marca = value; }
             public float Dimensiones1 { get => Dimensiones; set => Dimensiones = value; }
+            public string TipoVehiculo1 { get => TipoVehiculo; set => TipoVehiculo = value; }
 
-            public CPropiedadesVehiculo(String pPlaca, float pDimensiones, String pMarca, String pColor)
+            public CPropiedadesVehiculo(String pPlaca, float pDimensiones, String pTipoVehiculo, String pMarca, String pColor)
             {
                 this.Placa = pPlaca;
                 this.Dimensiones = pDimensiones;
+                this.TipoVehiculo = pTipoVehiculo;
                 this.Marca = pMarca;
                 this.Color = pColor;
 
